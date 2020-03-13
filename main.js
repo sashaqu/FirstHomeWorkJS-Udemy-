@@ -6,8 +6,8 @@
 
 // ·      Вторая "Введите дату в формате YYYY-MM-DD"
 
-var money = prompt("Ваш бюджет на месяц?");
-var time = prompt("Введите дату в формате YYYY-MM-DD");
+let money = prompt("Ваш бюджет на месяц?");
+let time = prompt("Введите дату в формате YYYY-MM-DD");
 
 console.log("money: ", money);
 console.log("time: ", time);
@@ -51,17 +51,21 @@ console.log("appData: ", appData);
 //     “ответ на первый вопрос” : “ответ на второй вопрос”
 //     }
 
-var first = prompt("Введите обязательную статью расходов в этом месяце?"); //Здесь ответ на первый вопрос
-var second = prompt("Во сколько обойдется?"); // Здесь на второй
+let a1 = prompt("Введите обязательную статью расходов в этом месяце?"); //Здесь ответ на первый вопрос
+let a2 = prompt("Во сколько обойдется?"); // Здесь на второй
+let a3 = prompt("Введите обязательную статью расходов в этом месяце?"); //Здесь ответ на первый вопрос
+let a4 = prompt("Во сколько обойдется?"); // Здесь на второй
 
-appData.expenses[first] = second;
 
-console.log("first: ", first);
-console.log("second: ", second);
+appData.expenses[a1] = a2;
+appData.expenses[a3] = a4;
+
+console.log("a1: ", a1);
+console.log("a2: ", a2);
 console.log(appData.expenses);
 
 // 5) Вывести на экран пользователя бюджет на 1 день (брать месяц за 30 дней, использовать alert)
-var budgetForDay = money/30;
+let budgetForDay = money/30;
 console.log(budgetForDay);
 alert(budgetForDay);
 
